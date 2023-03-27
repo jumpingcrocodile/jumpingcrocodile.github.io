@@ -13,12 +13,12 @@
     max-width: 100vw;
     overflow: hidden;
 
-    background-image: url(img/banner.png) ;
+
     background-position: center;
     background-size: cover;
     position: relative;
 
-    background-image: url(img/hero_image.svg);
+
     background-size: 38%;
     background-repeat: no-repeat;
     background-position: 15% 85%;
@@ -72,21 +72,14 @@ li{
 
 }
 
-h2, .hero__message{
-
-  color: #435243;  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: start;
-  padding-top: 50px;
-
+h1{
+    font-size: 1.5rem;
 }
-
 h2{
     padding-bottom: 10px;
     font-size: 5rem;
     font-weight: 800;
+    color: #435243;
 }
 
 h3{
@@ -124,6 +117,47 @@ p{
     margin-top: 10px;
 }
 
+/* ------------HERO SECTION-------------- */
+.hero__section{
+    margin-left: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 600px;
+    padding-top: 200px;
+}
+
+.hero__section h1{
+    color: #435243;
+
+}
+.message__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.icons__containter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-between;
+    padding-top: 20px;
+    margin-left: 300px;
+
+
+}
+
+.icons__container, .fa-brands, .fa-regular{
+    font-size: 1.5rem;
+    padding-left: 150px;
+    padding-top: 10px;
+    max-width: 100px;
+
+}
+
+
 /* -------------ABOUT ME------------- */
 #about__me{
     display: flex;
@@ -136,7 +170,6 @@ p{
     max-width: 100vw;
     background-color: #D9D9D9;
     padding-top: 80px;
-
 
 }
 
@@ -170,7 +203,7 @@ p{
     min-height: 100vh;
     max-width: 100vw;
     background-color: #D9D9D9;
-    padding: 0 70px 0 70px;
+    padding: 0 80px 100px 80px;
 }
 #projects h2{
     display: block;
@@ -191,7 +224,11 @@ p{
     padding-right: 1rem;
     font-size: 3rem;
 
-
+}
+/* fix this bit */
+.project-container, img{
+display: flex;
+flex-direction: column;
 }
 /* ------------project containers--------------- */
 .project-one{
